@@ -296,6 +296,10 @@ public static class PluginUI
         ImGui.Spacing();
 
         ResetSliderFloat("Bone Index", ref preset.BoneIndex, 0, 77, 30.0f, "%1.0f");
+        ResetSliderFloat("Bone Height Offset", ref preset.BoneHeightOffset, -10, 10, 0, "%.05f");
+        ResetSliderFloat("Bone Side Offset", ref preset.BoneSideOffset, -10, 10, 0, "%.05f");
+        ResetSliderFloat("Bone Depth Offset", ref preset.BoneDepthOffset, -10, 10, 0, "%.05f");
+
         ResetSliderFloat("Camera Height Offset", ref preset.HeightOffset, -5, 5, 0, "%.05f");
         ResetSliderFloat("Camera Side Offset", ref preset.SideOffset, -5, 5, 0, "%.05f");
         ResetSliderFloat("Camera Depth Offset", ref preset.DepthOffset, -5, 5, 0, "%.05f");

@@ -33,6 +33,11 @@ public class CameraConfigPreset
     public float MinVRotation = -1.483530f;
     public float MaxVRotation = 0.785398f;
 
+    public float BoneIndex = 0f;
+    public float BoneHeightOffset = 0;
+    public float BoneSideOffset = 0;
+    public float BoneDepthOffset = 0;
+
     public float HeightOffset = 0;
     public float SideOffset = 0;
     public float DepthOffset = 0;
@@ -41,7 +46,7 @@ public class CameraConfigPreset
     public ViewBobSetting ViewBobMode = ViewBobSetting.Disabled;
     public int ConditionSet = -1;
 
-    public float BoneIndex = 0f;
+    
 
     public CameraConfigPreset Clone() => (CameraConfigPreset)MemberwiseClone();
 

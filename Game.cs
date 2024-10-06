@@ -67,6 +67,10 @@ public static unsafe class Game
 
                 // 31 is standard ones
                 var newPos = Common.GetBoneWorldPosition(target, boneIndexInteger) + followingOffset + ((Vector3)target->Position - prevCameraTargetPosition);
+                newPos.Z += preset.BoneSideOffset;
+                newPos.Y += preset.BoneHeightOffset;
+                newPos.X += preset.BoneDepthOffset;
+
                 var d = target->Position.Y - interpolatedHeight;
                 if (target == prevCameraTarget && d is > -3 and < 3)
                 {
